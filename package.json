@@ -2,6 +2,7 @@
   "name": "@arbendium/eslint-config",
   "version": "0.0.1",
   "description": "ESLint config based on Airbnb's config",
+  "repository": "github:arbendium/eslint-config",
   "main": "index.js",
   "exports": {
     ".": "./index.js"
