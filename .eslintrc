@@ -1,4 +1,0 @@
-extends: '@arbendium/eslint-config-base'
-
-rules:
-  import/no-commonjs: off

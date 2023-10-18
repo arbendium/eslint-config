@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "ESLint config based on Airbnb's config",
   "repository": "github:arbendium/eslint-config",
-  "main": "index.js",
+  "type": "module",
   "exports": {
     ".": "./index.js"
   },
@@ -12,7 +12,7 @@
   },
   "license": "ISC",
   "dependencies": {
-    "@arbendium/eslint-config-base": "^0.0.1",
+    "@arbendium/eslint-config-base": "^0.1.0",
     "eslint-config-airbnb": "^19.0.4"
   },
   "peerDependencies": {
