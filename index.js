@@ -37,6 +37,17 @@ export default [
 			'react/jsx-indent-props': ['error', 'tab'],
 			'react/jsx-no-bind': 'off',
 			'react/jsx-one-expression-per-line': 'off',
+			'react/jsx-sort-props': [
+				'error',
+				{
+					ignoreCase: false,
+					callbacksLast: false,
+					shorthandFirst: false,
+					shorthandLast: false,
+					noSortAlphabetically: false,
+					reservedFirst: true
+				}
+			],
 			'react/jsx-uses-react': 'warn',
 			'react/jsx-uses-vars': 'warn',
 			'react/no-array-index-key': 'off',
