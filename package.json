@@ -4,11 +4,12 @@
   "description": "ESLint config based on Airbnb's config",
   "repository": "github:arbendium/eslint-config",
   "type": "module",
-  "exports": {
-    ".": "./index.js"
-  },
+  "files": [
+    "index.js"
+  ],
+  "exports": "./index.js",
   "scripts": {
-    "lint": "eslint index.js"
+    "lint": "eslint index.js eslint.config.js"
   },
   "license": "ISC",
   "dependencies": {
