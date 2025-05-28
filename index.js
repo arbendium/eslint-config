@@ -2,6 +2,9 @@ import base from '@arbendium/eslint-config-base';
 import pluginReact from 'eslint-plugin-react';
 import pluginJsxA11y from 'eslint-plugin-jsx-a11y';
 
+/**
+ * @type {import("eslint").Linter.Config[]}
+ */
 export default [
 	...base,
 	{
