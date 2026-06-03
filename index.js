@@ -11,30 +11,30 @@ export default [
 		settings: {
 			'import/resolver': {
 				node: {
-					extensions: ['.js', '.jsx', '.json']
-				}
+					extensions: ['.js', '.jsx', '.json'],
+				},
 			},
 			react: {
 				pragma: 'React',
-				version: 'detect'
+				version: 'detect',
 			},
-			propWrapperFunctions: ['forbidExtraProps', 'exact', 'Object.freeze']
+			propWrapperFunctions: ['forbidExtraProps', 'exact', 'Object.freeze'],
 		},
 		plugins: {
 			'jsx-a11y': pluginJsxA11y,
-			react: pluginReact
+			react: pluginReact,
 		},
 		rules: {
 			'class-methods-use-this': ['error', {
 				enforceForClassFields: true,
-				exceptMethods: ['render', 'getInitialState', 'getDefaultProps', 'getChildContext', 'componentWillMount', 'UNSAFE_componentWillMount', 'componentDidMount', 'componentWillReceiveProps', 'UNSAFE_componentWillReceiveProps', 'shouldComponentUpdate', 'componentWillUpdate', 'UNSAFE_componentWillUpdate', 'componentDidUpdate', 'componentWillUnmount', 'componentDidCatch', 'getSnapshotBeforeUpdate']
+				exceptMethods: ['render', 'getInitialState', 'getDefaultProps', 'getChildContext', 'componentWillMount', 'UNSAFE_componentWillMount', 'componentDidMount', 'componentWillReceiveProps', 'UNSAFE_componentWillReceiveProps', 'shouldComponentUpdate', 'componentWillUpdate', 'UNSAFE_componentWillUpdate', 'componentDidUpdate', 'componentWillUnmount', 'componentDidCatch', 'getSnapshotBeforeUpdate'],
 			}],
 			'jsx-a11y/alt-text': ['error', {
 				area: [],
 				elements: ['img', 'object', 'area', 'input[type="image"]'],
 				img: [],
 				'input[type="image"]': [],
-				object: []
+				object: [],
 			}],
 			'jsx-a11y/anchor-has-content': ['error', { components: [] }],
 			'jsx-a11y/anchor-is-valid': ['error', { components: ['Link'], specialLink: ['to'], aspects: ['noHref', 'invalidHref', 'preferButton'] }],
@@ -48,7 +48,7 @@ export default [
 				depth: 5,
 				ignoreElements: ['audio', 'canvas', 'embed', 'input', 'textarea', 'tr', 'video'],
 				ignoreRoles: ['grid', 'listbox', 'menu', 'menubar', 'radiogroup', 'row', 'tablist', 'toolbar', 'tree', 'treegrid'],
-				labelAttributes: ['label']
+				labelAttributes: ['label'],
 			}],
 			'jsx-a11y/heading-has-content': ['error', { components: [''] }],
 			'jsx-a11y/html-has-lang': 'error',
@@ -60,7 +60,7 @@ export default [
 				controlComponents: [],
 				depth: 25,
 				labelAttributes: [],
-				labelComponents: []
+				labelComponents: [],
 			}],
 			'jsx-a11y/lang': 'error',
 			'jsx-a11y/media-has-caption': ['error', { audio: [], video: [], track: [] }],
@@ -74,7 +74,7 @@ export default [
 				ol: ['listbox', 'menu', 'menubar', 'radiogroup', 'tablist', 'tree', 'treegrid'],
 				table: ['grid'],
 				td: ['gridcell'],
-				ul: ['listbox', 'menu', 'menubar', 'radiogroup', 'tablist', 'tree', 'treegrid']
+				ul: ['listbox', 'menu', 'menubar', 'radiogroup', 'tablist', 'tree', 'treegrid'],
 			}],
 			'jsx-a11y/no-noninteractive-tabindex': ['error', { tags: [], roles: ['tabpanel'] }],
 			'jsx-a11y/no-redundant-roles': 'error',
@@ -92,7 +92,7 @@ export default [
 				allowInArrayDestructuring: true,
 				allowInObjectDestructuring: true,
 				enforceInClassFields: false,
-				enforceInMethodNames: true
+				enforceInMethodNames: true,
 			}],
 			'react/button-has-type': ['error', { button: true, reset: false, submit: true }],
 			'react/default-props-match-prop-types': ['error', { allowRequiredDefaults: false }],
@@ -101,7 +101,7 @@ export default [
 			'react/forbid-prop-types': ['error', {
 				checkChildContextTypes: true,
 				checkContextTypes: true,
-				forbid: ['any', 'array', 'object']
+				forbid: ['any', 'array', 'object'],
 			}],
 			'react/function-component-definition': ['error', { namedComponents: ['function-declaration', 'function-expression'], unnamedComponents: 'function-expression' }],
 			'react/jsx-boolean-value': ['error', 'never', { always: [] }],
@@ -129,7 +129,7 @@ export default [
 				custom: 'enforce',
 				exceptions: [],
 				explicitSpread: 'ignore',
-				html: 'enforce'
+				html: 'enforce',
 			}],
 			'react/jsx-sort-props': ['error', {
 				callbacksLast: false,
@@ -139,13 +139,13 @@ export default [
 				noSortAlphabetically: false,
 				reservedFirst: true,
 				shorthandFirst: false,
-				shorthandLast: false
+				shorthandLast: false,
 			}],
 			'react/jsx-tag-spacing': ['error', {
 				afterOpening: 'never',
 				beforeClosing: 'never',
 				beforeSelfClosing: 'always',
-				closingSlash: 'never'
+				closingSlash: 'never',
 			}],
 			'react/jsx-uses-react': 'warn',
 			'react/jsx-uses-vars': 'warn',
@@ -156,7 +156,7 @@ export default [
 				declaration: 'parens-new-line',
 				logical: 'parens-new-line',
 				prop: 'parens-new-line',
-				return: 'parens-new-line'
+				return: 'parens-new-line',
 			}],
 			'react/no-access-state-in-setstate': 'error',
 			'react/no-arrow-function-lifecycle': 'error',
@@ -191,13 +191,13 @@ export default [
 				order: ['static-variables', 'static-methods', 'instance-variables', 'lifecycle', '/^handle.+$/', '/^on.+$/', 'getters', 'setters', '/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/', 'instance-methods', 'everything-else', 'rendering'],
 				groups: {
 					lifecycle: ['displayName', 'propTypes', 'contextTypes', 'childContextTypes', 'mixins', 'statics', 'defaultProps', 'constructor', 'getDefaultProps', 'getInitialState', 'state', 'getChildContext', 'getDerivedStateFromProps', 'componentWillMount', 'UNSAFE_componentWillMount', 'componentDidMount', 'componentWillReceiveProps', 'UNSAFE_componentWillReceiveProps', 'shouldComponentUpdate', 'componentWillUpdate', 'UNSAFE_componentWillUpdate', 'getSnapshotBeforeUpdate', 'componentDidUpdate', 'componentDidCatch', 'componentWillUnmount'],
-					rendering: ['/^render.+$/', 'render']
-				}
+					rendering: ['/^render.+$/', 'render'],
+				},
 			}],
 			'react/state-in-constructor': ['error', 'always'],
 			'react/static-property-placement': ['error', 'property assignment'],
 			'react/style-prop-object': 'error',
-			'react/void-dom-elements-no-children': 'error'
-		}
-	}
+			'react/void-dom-elements-no-children': 'error',
+		},
+	},
 ];

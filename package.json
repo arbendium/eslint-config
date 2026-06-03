@@ -1,6 +1,6 @@
 {
   "name": "@arbendium/eslint-config",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "ESLint config based on Airbnb's config",
   "repository": "github:arbendium/eslint-config",
   "type": "module",
@@ -15,7 +15,7 @@
   },
   "license": "ISC",
   "dependencies": {
-    "@arbendium/eslint-config-base": "^2.1.0",
+    "@arbendium/eslint-config-base": "^2.3.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.37.5"
   },
@@ -23,7 +23,7 @@
     "eslint": "^9.17.0"
   },
   "devDependencies": {
-    "@types/eslint-plugin-jsx-a11y": "^6.10.0",
-    "typescript": "^5.8.3"
+    "@types/eslint-plugin-jsx-a11y": "^6.10.1",
+    "typescript": "^6.0.3"
   }
 }
